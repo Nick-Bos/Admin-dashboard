@@ -1,0 +1,13 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border: 1px solid red;
+}
