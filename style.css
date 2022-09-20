@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container{
@@ -10,11 +11,81 @@ body{
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
-
+/*--Header styles--*/
 .header{
     border: 1px solid purple;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-weight: bold;
 }
 
+.header>.section-1{
+  padding-top: 2em;
+}
+.header>.section-1, .header>.section-2{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 2;
+  background-color: white;
+}
+
+.section-1>.search-bar-icon{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.section-1>.search-bar{
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row: 1;
+}
+
+.search-bar-icon{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  scale: 60%;
+}
+
+.search-bar-input{
+  margin-top: 1.2em;
+  width: 100%;
+  border-radius: 20px;
+  background-color: lightgray;
+  border: 0;
+  padding: .7em;
+}
+
+.bell-icon{
+  scale: 60%;
+  margin: auto;
+  grid-column: 8;
+}
+
+.display-picture-section-1{
+  margin: auto;
+  grid-column: 9;
+}
+
+.account-name-section-1{
+  grid-column: 10;
+  margin: auto;
+  padding: 0;
+  font-size: 1.2em;
+}
+.profile-pic-section-1{
+  width: 4em;
+  border-radius: 50%;
+}
+
+.profile-pic-section-2{
+  width: 6em;
+  border-radius: 50%;
+}
+/*--Header styles--*/
+
+/*--Side-bar styles--*/
 .sidebar{
     display: grid;
     grid-template-columns: 1fr;
@@ -26,7 +97,6 @@ body{
 
 .sidebar>div{
     color: rgba(255, 255, 255, 0.89);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     padding: .3em;
 }
@@ -53,3 +123,4 @@ ul > li {
   .section-1>ul>li>img,.section-2>ul>li>img{
     scale: 60%;
   }
+  /*--Side-bar styles--*/
